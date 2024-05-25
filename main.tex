@@ -29,7 +29,7 @@
 \documentclass[
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
 oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
-english, % TODO: Set language [english, spanish, ngerman]
+spanish, % TODO: Set language [english, spanish, ngerman]
 singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
 %draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
@@ -116,6 +116,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{enumitem}
 \usepackage{tikz-uml}
+% Remove the problematic code
 \usepackage{float}
 
 \usepackage{tcolorbox}
@@ -207,32 +208,32 @@ headsepline, % Uncomment to get a line under the header
 % \href{url}{name}
 
 % TODO: Your thesis title, print it with \ttitle
-\thesistitle{ThesisTitle}
+\thesistitle{Copilot inteligente para consultas LINQ/SQL}
 % TODO: Your tutor name, print it with \tutor
-\tutor{Tutor} 
+\tutor{Moldón Redondo, Daniel} 
 % TODO: Your other tutor name, print it with \tutorBis
-\tutorBis{TutorBis} 
+\tutorBis{Costa Cortez, Nahuel Alejandro} 
 % TODO: Your degree name, print it with \degreename
-\degree{Degree} 
+\degree{la asignatura Prácticas de Empresa del grado Ingeniería Informática en Tecnologías de la Información} 
 % TODO: Your name, print it with \authorname
-\author{Autor} 
+\author{Puga Lojo, Francisco Gabriel} 
 % TODO: Your peer name, print it with \authornameBis
 \authorBis{AutorBis} 
 % TODO: Your address, print it with \addressname
 \addresses{Address} 
 
 % TODO: Your subject area, print it with \subjectname
-\subject{Subject} 
+\subject{} 
 % TODO: Keywords for your thesis, print it with \keywordnames
 \keywords{Keywords} 
 % TODO: Your university's name and URL, print it with \univname
-\university{University} 
+\university{UNIVERSIDAD DE OVIEDO} 
 % TODO: Your department's name and URL, print it with \deptname
-\department{Department} 
+\department{Ingeniería Informática en Tecnologías de la Información} 
 % TODO: Your research group's name and URL, print it with \groupname
 \group{Group} 
 % TODO: Your faculty's name and URL, print it with \facname
-\faculty{Faculty} 
+\faculty{Escuela Politécnica de Ingeniería de Gijón (EPI)} 
 
 \AtBeginDocument{
 	\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
@@ -270,21 +271,19 @@ headsepline, % Uncomment to get a line under the header
 \end{minipage}
 \begin{minipage}[t]{\textwidth}
 	\begin{flushleft} \large
-		\emph{Autor (Bis):}\\
-		\authorBisName\\
     \vspace{2em}
 	\end{flushleft}
 \end{minipage}
 \begin{minipage}[t]{0.8\textwidth}
 	\begin{flushright} \large
-		\emph{Tutor:} \\
+		\emph{Tutor (Mecalux):} \\
 		\tutorName
     \vspace{2em}
 	\end{flushright}
 \end{minipage}\\
 \begin{minipage}[t]{0.8\textwidth}
 	\begin{flushright} \large
-		\emph{Tutor (Bis):} \\
+		\emph{Tutor (EPI):} \\
 		\tutorBisName
 	\end{flushright}
 \end{minipage}\\[3cm]
@@ -315,7 +314,7 @@ headsepline, % Uncomment to get a line under the header
 %Afirmo que:
 
 %\begin{itemize} 
-	%\item Este trabajo fue realizado completa o parcialmente durante mi estancia como estudiante en el grado de \degreename.
+	%\item Este trabajo fue realizado completa o parcialmente durante mi estancia como estudiante en el grado de \`degree'name.
 	%\item Aquellas partes de este documento que hayan sido previamente publicadas se encuentran debidamente indicadas.
 	%\item Aquellas partes de este documento que se apoyen en trabajos previamente publicados se encuentran debidamente indicadas.
 	%\item Todas las fuentes utilizadas para la realizacion de este trabajo se encuentran listadas.
@@ -351,6 +350,14 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{abstract}
 % TODO: Add the abstract
+
+El uso de bases de datos es fundamental en el campo de la ingeniería informática. Analizar información valiosa es vital para tomar decisiones, ya que permite comparar diversas opciones de manera objetiva.
+
+Lamentablemente, trabajar con bases de datos no es sencillo y requiere una formación que las personas fuera del ámbito de la informática generalmente no están dispuestas a adquirir.
+
+En Mecalux, he desarrollado un asistente que facilita la generación de código LINQ SQL y proporciona explicaciones de las consultas.
+
+El propósito de este asistente es simplificar el trabajo de los empleados de la empresa, permitiéndoles crear y comprender consultas SQL sin necesidad de conocimientos técnicos profundos, lo que optimiza los procesos y mejora la eficiencia en la toma de decisiones.
 \addchaptertocentry{\abstractname}
 
 \end{abstract}

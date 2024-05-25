@@ -370,8 +370,6 @@
 			{\normalsize \facname \par}% Faculty name
 			{\normalsize \deptname \par}% Department name
 			\bigskip
-			{\normalsize \degreename\par}% Degree name
-			\bigskip
 			{\normalsize\bfseries \@title \par}% Thesis title
 			\medskip
 			{\normalsize \byname \authorname \par}% Author name
@@ -396,8 +394,6 @@
 		{\normalsize \facname \par}% Faculty name
 		{\normalsize \deptname \par}% Department name
 		\bigskip
-		{\normalsize \degreename\par}% Degree name
-		\bigskip
 		{\normalsize\bfseries \@title \par}% Thesis title
 		\medskip
 		{\normalsize \byname{} \authorname \par}% Author name
@@ -418,7 +414,7 @@
 }
 \providecaptionname{spanish,mexican}{\requirements}{
   	Memoria entregada en cumplimiento con los requisitos
-  	indicados por \subjectname{} de \degreename{}
+  	indicados por \degreename{}
 }
 
 %----------------------------------------------------------------------------------------
